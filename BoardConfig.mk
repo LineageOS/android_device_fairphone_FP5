@@ -102,7 +102,7 @@ BOARD_KERNEL_CMDLINE := \
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := vendor/fp5-qgki_defconfig vendor/fp5.config
+TARGET_KERNEL_CONFIG := vendor/fp5-qgki_defconfig vendor/debugfs.config vendor/fp5.config
 TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/fairphone/qcm6490
 
