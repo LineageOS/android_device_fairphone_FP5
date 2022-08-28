@@ -277,6 +277,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/power/config/lahaina/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
 $(call soong_config_set,qtipower,tap_to_wake_node,/sys/devices/platform/goodix_ts.0/gesture/double_en)
 
 # Public libraries
