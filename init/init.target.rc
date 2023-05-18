@@ -68,18 +68,6 @@ on init
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
 
-    chown system system /sys/class/leds/vibrator_1/trigger
-    chown system system /sys/class/leds/vibrator_1/activate
-    chown system system /sys/class/leds/vibrator_1/brightness
-    chown system system /sys/class/leds/vibrator_1/duration
-    chown system system /sys/class/leds/vibrator_1/state
-    chown system system /sys/class/leds/vibrator_1/loop
-    chown system system /sys/class/leds/vibrator_1/seq
-    chown system system /sys/class/leds/vibrator_1/index
-    chown system system /sys/class/leds/vibrator_1/enable
-    chown system system /sys/class/leds/vibrator_1/rtp
-    chown system system /sys/class/leds/vibrator_1/activate_mode
-
 	# add sensor sysfs node
     chmod 0666 /sys/emkit/info/proximity
     chown system system /sys/emkit/info/proximity

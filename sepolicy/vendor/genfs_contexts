@@ -4,8 +4,5 @@ genfscon sysfs /class/debug_ois                                                 
 # Touchscreen
 genfscon sysfs /devices/platform/goodix_ts.0                                    u:object_r:vendor_sysfs_touchpanel:s0
 
-# Vibrator
-genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-005a/leds/vibrator_1    u:object_r:sysfs_leds:s0
-
 # Wakeup
 genfscon sysfs /devices/platform/soc/soc:focalfp_ft9362/wakeup                  u:object_r:sysfs_wakeup:s0
