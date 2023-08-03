@@ -310,7 +310,8 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     SystemUIResTarget \
     TelephonyResCommon \
-    WifiResCommon
+    WifiResCommon \
+    WifiResTarget
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
