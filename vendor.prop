@@ -103,6 +103,7 @@ vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_optimize_refresh=1
+vendor.display.vds_allow_hwc=1
 
 # DPM
 persist.vendor.dpm.idletimer.mode=default
