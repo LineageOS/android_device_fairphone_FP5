@@ -80,7 +80,7 @@ namespace vibrator {
 
 #define test_bit(bit, array)    ((array)[(bit)/8] & (1<<((bit)%8)))
 
-static const char LED_DEVICE[] = "/sys/class/leds/vibrator";
+static const char LED_DEVICE[] = "/sys/class/leds/vibrator_1";
 static const char HAPTICS_SYSFS[] = "/sys/class/qcom-haptics";
 
 static constexpr int32_t ComposeDelayMaxMs = 1000;
