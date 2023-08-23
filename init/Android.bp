@@ -11,6 +11,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.bt_mac.rc",
+    src: "init.bt_mac.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.qcom.rc",
     src: "init.qcom.rc",
     sub_dir: "init/hw",
@@ -42,6 +49,12 @@ prebuilt_etc {
     name: "ueventd.qcom.rc",
     filename: "ueventd.rc",
     src: "ueventd.qcom.rc",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.bt_mac.sh",
+    src: "init.bt_mac.sh",
     vendor: true,
 }
 
