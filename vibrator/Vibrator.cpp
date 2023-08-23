@@ -138,6 +138,7 @@ InputFFDevice::InputFFDevice()
         }
 
         if (strcmp(name, "qcom-hv-haptics") && strcmp(name, "qti-haptics")
+                && strcmp(name, "aw-haptic-hv")
                 && strcmp(name, "aw8624_haptic")
                 && strcmp(name, "aw8695_haptic")
                 && strcmp(name, "aw8697_haptic")
