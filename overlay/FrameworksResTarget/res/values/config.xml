@@ -99,10 +99,10 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string name="config_mainBuiltInDisplayCutout" translatable="false">
-        M -30,0
-        L -30,110
-        L 30,110
-        L 30,0
+        M -43.5 0
+        L -43.5 103
+        L 43.5 103
+        L 43.5 0
         Z
     </string>
 
