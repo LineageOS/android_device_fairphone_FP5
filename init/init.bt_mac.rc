@@ -1,0 +1,4 @@
+service init.bt_mac /vendor/bin/init.bt_mac.sh
+    class core
+    group root system
+    oneshot
