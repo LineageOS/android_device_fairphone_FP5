@@ -7,16 +7,8 @@ allow tctd block_device:dir search;
 allow tctd traceability_block_device:blk_file rw_file_perms;
 
 # Bluetooth MAC
-allow tctd mnt_vendor_file:dir search;
-r_dir_file(tctd, persist_t2m_param_file)
+dontaudit tctd mnt_vendor_file:dir search;
+dontaudit tctd property_socket:sock_file write;
 
-set_prop(tctd, vendor_t2m_sys_prop)
-
-# Light Sensor Calibration
-set_prop(tctd, vendor_tct_default_prop)
-
-# Ignore unused tctd functionality
-dontaudit tctd persist_t2m_param_file:dir write;
-dontaudit tctd persist_t2m_param_file:file write;
-dontaudit tctd self:qipcrtr_socket create;
-dontaudit tctd vendor_tct_ignored_prop:property_service set;
+# Qualcomm IPC router, necessary groundwork for the vendor.rmt_storage service
+allow tctd self:qipcrtr_socket create_socket_perms_no_ioctl;

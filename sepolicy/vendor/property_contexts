@@ -1,29 +1,4 @@
-# Bluetooth MAC
-ro.vendor.t2m.btmac            u:object_r:vendor_t2m_sys_prop:s0
-
-# Camera
-vendor.t2m.camera_main.vcm_id  u:object_r:vendor_t2m_sys_prop:s0
-
-# Fingerprint
-persist.odm.fp_log_level       u:object_r:vendor_fp_prop:s0
-
-# Light Sensor Calibration
-ro.vendor.tct.backcaldata      u:object_r:vendor_tct_default_prop:s0
-ro.vendor.tct.frontcaldata     u:object_r:vendor_tct_default_prop:s0
-
 # Serial Nums
 vendor.t2m.camera_main.sn      u:object_r:vendor_t2m_sys_prop:s0
 vendor.t2m.camera_aux.sn       u:object_r:vendor_t2m_sys_prop:s0
 vendor.t2m.camera_front.sn     u:object_r:vendor_t2m_sys_prop:s0
-vendor.t2m.fingerprint.chipid  u:object_r:vendor_t2m_sys_prop:s0
-
-# Tctd ignored properties
-ro.vendor.tct.handsetref       u:object_r:vendor_tct_ignored_prop:s0
-ro.vendor.tct.mfg.date         u:object_r:vendor_tct_ignored_prop:s0
-ro.vendor.tct.multiple         u:object_r:vendor_tct_ignored_prop:s0
-ro.vendor.tct.ptm              u:object_r:vendor_tct_ignored_prop:s0
-ro.vendor.tct.trace.bsn        u:object_r:vendor_tct_ignored_prop:s0
-ro.vendor.tct.trace.pth        u:object_r:vendor_tct_ignored_prop:s0
-ro.vendor.tct.trace.pts        u:object_r:vendor_tct_ignored_prop:s0
-ro.vendor.tct.trace.skd        u:object_r:vendor_tct_ignored_prop:s0
-ro.vendor.tct.wifimac          u:object_r:vendor_tct_ignored_prop:s0
