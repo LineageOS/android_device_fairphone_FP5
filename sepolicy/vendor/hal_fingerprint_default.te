@@ -1,7 +1,8 @@
-add_hwservice(hal_fingerprint_default, fp_ext_svc2_hwservice)
+add_service(hal_fingerprint_default, focaltech_vndservice);
+vndbinder_use(hal_fingerprint_default)
 
 allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 
-get_prop(hal_fingerprint_default, vendor_fp_prop)
-set_prop(hal_fingerprint_default, vendor_t2m_sys_prop)
+allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
