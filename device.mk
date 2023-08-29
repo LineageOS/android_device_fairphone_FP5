@@ -35,10 +35,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
-    audio.primary.lito \
+    audio.primary.lahaina \
     audio.r_submix.default \
     audio.usb.default \
-    audio_amplifier.lito \
+    audio_amplifier.lahaina \
     liba2dpoffload \
     libbatterylistener \
     libcomprcapture \
@@ -121,14 +121,14 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl \
-    gralloc.lito \
+    gralloc.lahaina \
     init.qti.display_boot.sh \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libqdMetaData \
     libsdmcore \
     libsdmutils \
-    memtrack.lito \
+    memtrack.lahaina \
     vendor.display.config@1.0.vendor:64 \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
