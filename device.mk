@@ -125,14 +125,14 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl \
-    gralloc.lahaina \
+    init.qti.display_boot.rc \
     init.qti.display_boot.sh \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libqdMetaData \
     libsdmcore \
     libsdmutils \
-    memtrack.lahaina \
+    memtrack.default \
     vendor.display.config@1.0.vendor:64 \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
