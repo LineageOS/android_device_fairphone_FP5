@@ -15,6 +15,7 @@ cc_library {
     cflags: [
         "-Wall",
         "-Werror",
+        "-D_BSG_FRAMEWORK_KERNEL_HEADERS",
     ],
     srcs: [
         "gpt-utils.cpp",
