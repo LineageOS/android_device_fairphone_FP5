@@ -465,4 +465,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/fairphone/FP4/FP4-vendor.mk)
+$(call inherit-product, vendor/fairphone/FP5/FP5-vendor.mk)
