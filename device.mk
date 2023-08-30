@@ -39,8 +39,10 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     audio_amplifier.lahaina \
+    audioadsprpcd \
     liba2dpoffload \
     libbatterylistener \
+    libcirrusspkrprot \
     libcomprcapture \
     libexthwplugin \
     libhdmiedid \
@@ -50,7 +52,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libsndmonitor \
     libspkrprot \
-    libvolumelistener
+    libvolumelistener \
+    sound_trigger.primary.lahaina
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
