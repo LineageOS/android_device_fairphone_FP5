@@ -115,14 +115,9 @@
         <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.fpsensor.hardware.fpsensorhidlsvc</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IFpsensorHidlSvc/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
-        <fqname>@2.2::IFactory/default</fqname>
+        <fqname>@2.3::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>
@@ -148,6 +143,11 @@
         <name>vendor.qti.hardware.btconfigstore</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::IBTConfigStore/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.cacert</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.camera.postproc</name>
@@ -197,6 +197,11 @@
         <fqname>@2.2::IPerf/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.qconfig</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IQConfig/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.qseecom</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IQSEECom/default</fqname>
@@ -227,8 +232,8 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.lpa</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IUimLpa/UimLpa0</fqname>
-        <fqname>@1.0::IUimLpa/UimLpa1</fqname>
+        <fqname>@1.1::IUimLpa/UimLpa0</fqname>
+        <fqname>@1.1::IUimLpa/UimLpa1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qcrilhook</name>
@@ -245,8 +250,8 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
-        <fqname>@2.4::IQtiRadio/slot1</fqname>
-        <fqname>@2.4::IQtiRadio/slot2</fqname>
+        <fqname>@2.7::IQtiRadio/slot1</fqname>
+        <fqname>@2.7::IQtiRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim</name>
@@ -284,7 +289,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.vpp</name>
         <transport>hwbinder</transport>
-        <fqname>@1.3::IHidlVppService/vppService</fqname>
+        <fqname>@2.0::IHidlVppService/vppService</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.wifidisplaysession</name>
@@ -302,7 +307,7 @@
     <hal format="hidl">
         <name>vendor.qti.ims.factory</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IImsFactory/default</fqname>
+        <fqname>@1.1::IImsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
