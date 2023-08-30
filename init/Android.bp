@@ -7,7 +7,7 @@ prebuilt_etc {
     name: "fstab.default",
     src: "fstab.default",
     vendor: true,
-    ramdisk_available: true,
+    vendor_ramdisk_available: true,
 }
 
 prebuilt_etc {
@@ -66,17 +66,5 @@ sh_binary {
 sh_binary {
     name: "init.qcom.sh",
     src: "init.qcom.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.dcvs.sh",
-    src: "init.qti.dcvs.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.early_init.sh",
-    src: "init.qti.early_init.sh",
     vendor: true,
 }
