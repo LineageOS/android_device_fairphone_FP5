@@ -6,22 +6,21 @@ af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
-persist.vendor.audio.avs.afe_api_version=2
-persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.avs.afe_api_version=9
+persist.vendor.audio.fluence.speaker=false
 persist.vendor.audio.fluence.tmic.enabled=false
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio.spv3.enable=true
+persist.vendor.audio.ha_proxy.enabled=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 ro.af.client_heap_size_kbyte=7168
-ro.vendor.audio.sdk.fluencetype=none
+ro.vendor.audio.sdk.fluencetype=fluence
 vendor.audio.adm.buffering.ms=2
 vendor.audio.hal.output.suspend.supported=true
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.gapless.enabled=true
-vendor.audio.offload.multiaac.enable=true
-vendor.audio.usb.disable.sidetone=true
+vendor.audio.spkr_prot.tx.sampling_rate=48000
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
@@ -33,13 +32,13 @@ vendor.voice.path.for.pcm.voip=true
 # Audio - features
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
-vendor.audio.feature.anc_headset.enable=true
 vendor.audio.feature.battery_listener.enable=true
 vendor.audio.feature.compress_in.enable=true
 vendor.audio.feature.compress_meta_data.enable=true
 vendor.audio.feature.concurrent_capture.enable=true
 vendor.audio.feature.custom_stereo.enable=true
 vendor.audio.feature.display_port.enable=true
+vendor.audio.feature.dynamic_ecns.enable=true
 vendor.audio.feature.fluence.enable=true
 vendor.audio.feature.hdmi_edid.enable=true
 vendor.audio.feature.hdmi_passthrough.enable=true
@@ -48,6 +47,7 @@ vendor.audio.feature.incall_music.enable=true
 vendor.audio.feature.keep_alive.enable=true
 vendor.audio.feature.kpi_optimize.enable=true
 vendor.audio.feature.multi_voice_session.enable=true
+vendor.audio.feature.power_mode.enable=true
 vendor.audio.feature.ras.enable=true
 vendor.audio.feature.snd_mon.enable=true
 vendor.audio.feature.spkr_prot.enable=true
@@ -60,10 +60,10 @@ vendor.audio.feature.vbat.enable=true
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.device.default_name=Fairphone 5 5G
-bluetooth.hardware.power.idle_cur_ma=3
+bluetooth.hardware.power.idle_cur_ma=6
 bluetooth.hardware.power.operating_voltage_mv=3700
-bluetooth.hardware.power.rx_cur_ma=20
-bluetooth.hardware.power.tx_cur_ma=33
+bluetooth.hardware.power.rx_cur_ma=28
+bluetooth.hardware.power.tx_cur_ma=36
 bluetooth.profile.a2dp.source.enabled?=true
 bluetooth.profile.asha.central.enabled?=true
 bluetooth.profile.avrcp.target.enabled?=true
@@ -83,17 +83,13 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
-persist.vendor.qcom.bluetooth.scram.enabled=true
-persist.vendor.qcom.bluetooth.soc=cherokee
 ro.bluetooth.a2dp_offload.supported=true
-ro.vendor.bluetooth.wipower=false
 
 # Chipset
 ro.soc.manufacturer=QTI
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
-ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.volume.metadata.method=dm-default-key
 
 # Dalvik
@@ -104,19 +100,12 @@ vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery_dump=1
-vendor.display.disable_idle_time_hdr=1
-vendor.display.disable_idle_time_video=1
 vendor.display.disable_offline_rotator=1
-vendor.display.disable_scaler=0
-vendor.display.enable_allow_idle_fallback=1
-vendor.display.enable_async_powermode=1
-vendor.display.enable_camera_smooth=1
+vendor.display.enable_async_powermode=0
 vendor.display.enable_optimize_refresh=1
-vendor.display.enable_perf_hint_large_comp_cycle=1
-vendor.display.enable_posted_start_dyn=1
-vendor.display.use_smooth_motion=1
 
 # DPM
+persist.vendor.dpm.idletimer.mode=default
 persist.vendor.dpmhalservice.enable=1
 
 # DRM
@@ -131,33 +120,33 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
 # Graphics
-debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
-debug.sf.perf_fps_early_gl_phase_offset_ns=-5000000
-debug.sf.perf_fps_early_phase_offset_ns=-5000000
-debug.sf.perf_fps_late_sf_phase_offset_ns=-5000000
 debug.sf.predict_hwc_composition_strategy=0
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 vendor.gralloc.disable_ubwc=0
-vendor.opengles.version=196610
 
 # Incremental FS
 ro.incremental.enable=yes
 
 # Media
-debug.stagefright.ccodec=1
+debug.stagefright.c2inputsurface=-1
+debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 
 # Network manager
-persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 
 # OEM Unlock
@@ -165,6 +154,10 @@ ro.oem_unlock_supported=1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+
+# QTEE
+persist.vendor.qteeconnector.retrying_interval=30
+persist.vendor.qteeconnector.retrying_timeout=2000
 
 # Radio
 persist.radio.multisim.config=dsds
@@ -180,17 +173,20 @@ telephony.lteOnCdmaDevice=1
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.enable.mag_filter=true
+persist.vendor.sensors.on_change_sample_period=true
+persist.vendor.sensors.sync_request=true
 
 # USB
 ro.recovery.usb.fastboot.pid=D00D
-vendor.usb.diag.func.name=diag
+sys.usb.mtp.batchcancel=1
+vendor.usb.diag.func.name=ffs
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.product_string=Fairphone 5 5G
 vendor.usb.qdss.inst.name=qdss_mdm
 vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
-vendor.usb.use_ffs_mtp=0
+vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=0
 
 # WiFi
@@ -205,6 +201,7 @@ ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.use_color_management=true
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Zygote
