@@ -61,6 +61,9 @@ function blob_fixup() {
         vendor/etc/libnfc-hal-st.conf)
             sed -i 's|STNFC_HAL_LOGLEVEL=.*|STNFC_HAL_LOGLEVEL=0x12|g' "${2}"
             ;;
+        vendor/etc/camera/camxoverridesettings.txt)
+            sed -i '$aexposeFullSizeForQCFA=TRUE' "${2}"
+            ;;
     esac
 }
 
