@@ -4,6 +4,15 @@
      SPDX-License-Identifier: BSD-3-Clause
 -->
 <resources>
+    <!-- Control whether the always on display mode is available. This should only be enabled on
+         devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
+         states. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Control whether the always on display mode is enabled by default. This value will be used
+         during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
     <!-- An array of arrays of side fingerprint sensor properties relative to each display.
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
@@ -26,25 +35,6 @@
         <item>0</item>
         <item>1</item>
         <item>3</item>
-    </integer-array>
-
-    <!-- Vibrator pattern for feedback about a long screen/key press -->
-    <integer-array name="config_longPressVibePattern">
-        <item>0</item>
-        <item>15</item>
-    </integer-array>
-
-    <!-- Vibrator pattern for feedback about booting with safe mode enabled -->
-    <integer-array name="config_safeModeEnabledVibePattern">
-        <item>0</item>
-        <item>0</item>
-        <item>94</item>
-    </integer-array>
-
-    <!-- Vibrator pattern for feedback about touching a virtual key -->
-    <integer-array name="config_virtualKeyVibePattern">
-        <item>0</item>
-        <item>15</item>
     </integer-array>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
@@ -109,16 +99,16 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string name="config_mainBuiltInDisplayCutout" translatable="false">
-        M -145 0
-        L -145 81
-        L 145 81
-        L 145 0
+        M -30,0
+        L -30,110
+        L 30,110
+        L 30,0
         Z
     </string>
 
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">FP4</string>
+    <string name="config_mms_user_agent" translatable="false">FP5-MMS/2.0</string>
 
     <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url" translatable="false">https://techsupport.fairphone.com/uap/fp4_UAP.xml</string>
+    <string name="config_mms_user_agent_profile_url" translatable="false">https://techsupport.fairphone.com/uap/FP5_UAP.xml</string>
 </resources>
