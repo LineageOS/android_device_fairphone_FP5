@@ -145,6 +145,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := lahaina
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/platform/goodix_ts.0/gesture/double_en"
+
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true

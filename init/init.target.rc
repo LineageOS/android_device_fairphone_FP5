@@ -176,6 +176,9 @@ on boot
 
     chown system system /dev/focaltech_fp
     chmod 0660 /dev/focaltech_fp
+    # double tap
+    chown system system /sys/devices/platform/goodix_ts.0/gesture/double_en
+    chmod 0660 /sys/devices/platform/goodix_ts.0/gesture/double_en
     # charging enable
     chmod 0666 /sys/class/power_supply/battery/user_fcc
     # charge mode fcc
