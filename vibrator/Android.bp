@@ -35,10 +35,7 @@ vibrator_cc_defaults {
 
 cc_library_shared {
     name: "vendor.qti.hardware.vibrator.impl.FP5",
-    defaults: [
-        "vibrator_defaults",
-        "qti_vibrator_hal_defaults",
-    ],
+    defaults: ["vibrator_defaults"],
     vendor: true,
     srcs: [
         "Vibrator.cpp",
@@ -48,6 +45,7 @@ cc_library_shared {
         "libcutils",
         "libutils",
         "liblog",
+        "libqtivibratoreffect",
         "libqtivibratoreffectoffload",
         "libbinder_ndk",
     ],
