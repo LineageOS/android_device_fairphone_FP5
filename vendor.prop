@@ -85,6 +85,9 @@ persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 ro.bluetooth.a2dp_offload.supported=true
 
+# Camera
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
+
 # Chipset
 ro.soc.manufacturer=QTI
 
