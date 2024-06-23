@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio_amplifier.lahaina \
     audioadsprpcd \
+    firmware_aw_cali.bin_symlink \
     liba2dpoffload \
     libbatterylistener \
     libcirrusspkrprot \
