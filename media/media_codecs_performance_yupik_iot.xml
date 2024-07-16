@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
-    Copyright (c) 2018-2021 Qualcomm Technologies, Inc.
+    Copyright (c) 2018-2021, 2023 Qualcomm Technologies, Inc.
     All Rights Reserved.
     Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -105,6 +105,12 @@
             <Limit name="measured-frame-rate-480x360" range="1600-1800" />
             <Limit name="measured-frame-rate-1280x720" range="200-800" />
         </MediaCodec>
+        <MediaCodec name="c2.android.av1.decoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-352x288" range="166-354" />
+            <Limit name="measured-frame-rate-640x360" range="111-245" />
+            <Limit name="measured-frame-rate-720x480" range="116-168" />
+            <Limit name="measured-frame-rate-1280x720" range="60-85" />
+        </MediaCodec>
     </Decoders>
 
     <Encoders>
@@ -116,7 +122,7 @@
             <Limit name="measured-frame-rate-1920x1080" range="20-44" />
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="480-535" />
+            <Limit name="measured-frame-rate-320x240" range="111-155" />
             <Limit name="measured-frame-rate-720x480" range="165-210" />
             <Limit name="measured-frame-rate-1280x720" range="35-250" />
             <Limit name="measured-frame-rate-1920x1080" range="17-37" />
@@ -166,6 +172,12 @@
         <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true">
              <Limit name="measured-frame-rate-320x240" range="38-47" />
              <Limit name="measured-frame-rate-720x480" range="8-15" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.av1.encoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-320x240" range="245-530" />
+            <Limit name="measured-frame-rate-720x480" range="49-110" />
+            <Limit name="measured-frame-rate-1280x720" range="19-41" />
+            <Limit name="measured-frame-rate-1920x1080" range="20-30"/>
         </MediaCodec>
     </Encoders>
 </MediaCodecs>
