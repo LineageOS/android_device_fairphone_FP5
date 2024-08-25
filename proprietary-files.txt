@@ -209,7 +209,8 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmorpho_hdr_checker.so
-vendor/lib64/libmorpho_movie_stabilizer.so
+# libmorpho_movie_stabilizer depends on NDK libnativewindow and build is unable to resolve its symbols
+vendor/lib64/libmorpho_movie_stabilizer.so;DISABLE_CHECKELF
 vendor/lib64/libmotionDet.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libofflinedump.so
