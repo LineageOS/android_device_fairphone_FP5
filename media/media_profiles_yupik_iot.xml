@@ -981,6 +981,7 @@
             channels="2" />
     </EncoderProfile>
 
+    <!--
     <EncoderProfile quality="highspeed1080p" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="50000000"
@@ -988,7 +989,6 @@
              height="1080"
              frameRate="120" />
 
-      <!-- audio setting is ignored -->
       <Audio codec="aac"
              bitRate="96000"
              sampleRate="48000"
@@ -1002,7 +1002,6 @@
              height="1080"
              frameRate="120" />
 
-      <!-- audio setting is ignored -->
       <Audio codec="aac"
              bitRate="96000"
              sampleRate="48000"
@@ -1016,7 +1015,6 @@
              height="720"
              frameRate="240" />
 
-      <!-- audio setting is ignored -->
       <Audio codec="aac"
              bitRate="96000"
              sampleRate="48000"
@@ -1035,6 +1033,7 @@
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
+    -->
 
         <ImageEncoding quality="95" />
         <ImageEncoding quality="80" />
