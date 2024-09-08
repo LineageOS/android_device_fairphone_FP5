@@ -1,7 +1,6 @@
 # Unpinned blobs from Fairphone/FP5/FP5:14/UKQ1.230924.001/UT2H:user/release-keys
 
 # Current blobs with ELF checks disabled:
-# libOmxVideoDSMode depends on libOmxCore, which is a gnu makefile target
 # libcne, libwqe, lowi-server, mutualex depend on libwpa_client, which is a gnu makefile target
 # libmorpho_movie_stabilizer depends on NDK libnativewindow and build is unable to resolve its symbols
 
@@ -874,29 +873,6 @@ vendor/etc/st21nfc_conf.txt
 # NFC (Firmware)
 vendor/firmware/st21nfc_fw.bin
 vendor/firmware/st21nfc_fw7.bin
-
-# OMX
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxVideoDSMode.so;DISABLE_CHECKELF
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxG711Dec.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxWmaDec.so
 
 # PASR manager
 vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
