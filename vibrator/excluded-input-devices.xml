@@ -33,4 +33,5 @@
     <device name="aw8695_haptic"/>
     <device name="aw8697_haptic"/>
     <device name="awinic_haptic"/>
+    <device name="drv2624:haptics"/>
 </devices>
