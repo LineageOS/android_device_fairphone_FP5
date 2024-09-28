@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4857ba4c_43c288da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2024-09-28T16:43:42Z",
+      "side": 1,
+      "message": "Fixes audio HAL crash when pcm_config is not correct",
+      "revId": "ef59678c15c8512bdb1cacc0e8bf4c9791c46e28",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
