@@ -102,12 +102,31 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string name="config_mainBuiltInDisplayCutout" translatable="false">
+        M 568.5,59.5
+        a 43.5,43.5 0 1 0 87,0
+        a 43.5,43.5 0 1 0 -87,0
+        Z
+        @left
+    </string>
+
+    <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
+         one single bounding rect per device edge to the app via
+         {@link DisplayCutout#getBoundingRect}. Note that this path should try to match the visual
+         appearance of the cutout as much as possible, and may be smaller than
+         config_mainBuiltInDisplayCutout
+         -->
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation" translatable="false">
         M -43.5 0
-        L -43.5 103
-        L 43.5 103
+        L -43.5 119
+        L 43.5 119
         L 43.5 0
         Z
     </string>
+
+    <!-- Whether the display cutout region of the main built-in display should be forced to
+         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
+         -->
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">FP5-MMS/2.0</string>
