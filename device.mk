@@ -216,6 +216,10 @@ PRODUCT_ENABLE_UFFD_GC := false
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_performance_yupik_iot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_iot.xml \
