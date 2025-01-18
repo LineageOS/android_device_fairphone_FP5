@@ -385,9 +385,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
-# WiFi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/fairphone/FP5/FP5-vendor.mk)
