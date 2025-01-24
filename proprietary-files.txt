@@ -2,7 +2,6 @@
 
 # Current blobs with ELF checks disabled:
 # libcne, libwqe, lowi-server, mutualex depend on libwpa_client, which is a gnu makefile target
-# libmorpho_movie_stabilizer depends on NDK libnativewindow and build is unable to resolve its symbols
 
 # ACDB
 vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_Bluetooth_cal.acdb
@@ -213,7 +212,7 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmorpho_hdr_checker.so
-vendor/lib64/libmorpho_movie_stabilizer.so;DISABLE_CHECKELF
+vendor/lib64/libmorpho_movie_stabilizer.so
 vendor/lib64/libmotionDet.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libofflinedump.so
