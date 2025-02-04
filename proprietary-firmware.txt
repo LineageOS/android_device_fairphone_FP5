@@ -1,4 +1,4 @@
-# Firmware from Fairphone/FP5/FP5:14/UKQ1.230924.001/UT2H:user/release-keys
+# All firmware images below are extracted from the release mentioned in proprietary-files.txt
 
 abl.elf:abl.img;AB
 aop.mbn:aop.img;AB

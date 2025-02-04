@@ -1,4 +1,4 @@
-# Unpinned blobs from Fairphone/FP5/FP5:14/UKQ1.230924.001/UT2H:user/release-keys
+# Unpinned blobs from Fairphone/FP5/FP5:14/UKQ1.230924.001/UT2K:user/release-keys
 
 # Current blobs with ELF checks disabled:
 # libcne, libwqe, lowi-server, mutualex depend on libwpa_client, which is a gnu makefile target
