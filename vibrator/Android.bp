@@ -18,6 +18,9 @@ cc_library_shared {
         "libbinder_ndk",
         "android.hardware.vibrator-V2-ndk",
     ],
+    header_libs: [
+        "libqtivibratoreffect_headers",
+    ],
     export_include_dirs: ["include"]
 }
 
