@@ -194,6 +194,7 @@ on boot && property:persist.vendor.usb.controller.default=*
 
 on init && property:ro.boot.mode=charger
     mount_all /vendor/etc/charger_fw_fstab.qti --early
+    wait /sys/kernel/boot_adsp/boot
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
 
