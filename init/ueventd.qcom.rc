@@ -485,3 +485,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Battery
 /sys/class/qcom-battery                                 charging_enabled                0660    system  system
+
+# Touchscreen
+/sys/devices/platform/goodix_ts.0                       gesture/double_en               0660    system  system
