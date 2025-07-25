@@ -1,4 +1,4 @@
-# Unpinned blobs from Fairphone/FP5/FP5:14/UKQ1.230924.001/UT2Q:user/release-keys
+# Unpinned blobs from Fairphone/FP5/FP5:15/AQ3A.240912.001/VT28:user/release-keys
 
 # ACDB
 vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_Bluetooth_cal.acdb
@@ -446,6 +446,10 @@ vendor/lib/libcvp_common.so
 vendor/lib64/libcvp2_1.so
 vendor/lib64/libcvp_common.so
 
+# Diag
+system/lib64/vendor.qti.diaghal-V1-ndk.so:system_ext/lib64/vendor.qti.diaghal-V1-ndk.so
+system_ext/lib64/vendor.qti.diaghal@1.0.so
+
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
 
@@ -511,7 +515,6 @@ system_ext/lib64/libdpmctmgr.so
 system_ext/lib64/libdpmfdmgr.so
 system_ext/lib64/libdpmframework.so
 system_ext/lib64/libdpmtcm.so
-system_ext/lib64/vendor.qti.diaghal@1.0.so
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
@@ -574,8 +577,8 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
-vendor/etc/vintf/manifest/vendor.qti.gnss@4.2-service.xml
-vendor/lib64/hw/vendor.qti.gnss@4.2-impl.so
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.3-service.xml
+vendor/lib64/hw/vendor.qti.gnss@4.3-impl.so
 vendor/lib64/libaoa.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
@@ -600,8 +603,9 @@ vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.gnss@4.1.so
-vendor/lib64/vendor.qti.gnss@4.2-service.so
 vendor/lib64/vendor.qti.gnss@4.2.so
+vendor/lib64/vendor.qti.gnss@4.3-service.so
+vendor/lib64/vendor.qti.gnss@4.3.so
 
 # GNSS configs
 vendor/etc/lowi.conf
