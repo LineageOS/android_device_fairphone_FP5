@@ -1736,6 +1736,11 @@
         minSampleRate="16000" maxSampleRate="48000"
         minChannels="1" maxChannels="1" />
 
+    <AudioEncoderCap name="heaacps" enabled="true"
+        minBitRate="128000" maxBitRate="128000"
+        minSampleRate="44100" maxSampleRate="48000"
+        minChannels="2" maxChannels="2" />
+
     <AudioEncoderCap name="aaceld" enabled="true"
         minBitRate="16000" maxBitRate="192000"
         minSampleRate="16000" maxSampleRate="48000"

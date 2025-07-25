@@ -229,6 +229,10 @@
             <Limit name="concurrent-instances" max="16" />
             <Feature name="intra-refresh" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
+            <Tuning name="vq-target-bpp-1920x1080" value="3.80" />
+            <Tuning name="vq-target-bpp-1280x720" value="4.50" />
+            <Tuning name="vq-target-bpp-960x540" value="4.63" />
+            <Tuning name="vq-target-bpp-640x480" value="5.25" />
             <Limit name="performance-point-3840x2160" value="30" />
             <Limit name="performance-point-1920x1080" value="120" />
             <Limit name="performance-point-1280x720" value="240" />
@@ -245,11 +249,12 @@
             <Limit name="concurrent-instances" max="16" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
             <Feature name="intra-refresh" />
+            <Tuning name="vq-target-bpp-1920x1080" value="3" />
             <Limit name="performance-point-3840x2160" value="30" />
             <Limit name="performance-point-1920x1080" value="120" />
             <Limit name="performance-point-1280x720" value="240" />
         </MediaCodec>
-        <MediaCodec name="c2.qti.hevc.encoder.cq" type="video/hevc">
+        <!--<MediaCodec name="c2.qti.hevc.encoder.cq" type="video/hevc">
             <Alias name="OMX.qcom.video.encoder.hevc.cq"/>
             <Limit name="size" min="128x128" max="512x512" />
             <Limit name="alignment" value="2x2" />
@@ -275,6 +280,6 @@
             <Feature name="bitrate-modes" value="CQ" />
             <Limit name="performance-point-16384x8192" value="3" />
             <Limit name="performance-point-1920x1080" value="6" />
-        </MediaCodec>
+        </MediaCodec>-->
     </Encoders>
 </MediaCodecs>
