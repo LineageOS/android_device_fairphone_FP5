@@ -28,5 +28,5 @@ PRODUCT_MANUFACTURER := Fairphone
 PRODUCT_GMS_CLIENTID_BASE := android-alcatel
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=Fairphone/FP5/FP5:14/UKQ1.230924.001/UT2Q:user/release-keys \
+    BuildFingerprint=Fairphone/FP5/FP5:15/AQ3A.240912.001/VT28:user/release-keys \
     DeviceProduct=FP5

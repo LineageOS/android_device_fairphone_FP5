@@ -1,4 +1,4 @@
-# Unpinned blobs from Fairphone/FP5/FP5:14/UKQ1.230924.001/UT2Q:user/release-keys
+# Unpinned blobs from Fairphone/FP5/FP5:15/AQ3A.240912.001/VT28:user/release-keys
 
 # ACDB
 vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_Bluetooth_cal.acdb
@@ -574,8 +574,8 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
-vendor/etc/vintf/manifest/vendor.qti.gnss@4.2-service.xml
-vendor/lib64/hw/vendor.qti.gnss@4.2-impl.so
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.3-service.xml
+vendor/lib64/hw/vendor.qti.gnss@4.3-impl.so
 vendor/lib64/libaoa.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
@@ -600,8 +600,9 @@ vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.gnss@4.1.so
-vendor/lib64/vendor.qti.gnss@4.2-service.so
 vendor/lib64/vendor.qti.gnss@4.2.so
+vendor/lib64/vendor.qti.gnss@4.3-service.so
+vendor/lib64/vendor.qti.gnss@4.3.so
 
 # GNSS configs
 vendor/etc/lowi.conf
